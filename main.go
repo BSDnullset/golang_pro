@@ -1,5 +1,5 @@
 package main
 
 func main() {
-	fmt.println("first commit on gighub")
+	fmt.println("first commit on github")
 }
