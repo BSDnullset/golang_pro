@@ -14,3 +14,9 @@ func TestGreet(t *testing.T) {
 		t.Errorf("got %q want %q", got, want)
 	}
 }
+
+// go test files need to be named someVariable_test.go
+// and the Test function must start with the word Test so that it gets recognized by the linker & compiler
+// the function TestSomeVariable takes ONLY one argument: t *testing.T
+// for the compiler to recognize   *testing.T	one first needs to		import "testing"
+// just like you'd import "fmt"

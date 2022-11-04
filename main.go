@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func addKubernetes_Clusters(clusters []string, cluster string) []string {
 	return append(clusters, cluster)
