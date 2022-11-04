@@ -7,9 +7,12 @@ import (
 func addKubernetes_Clusters(clusters []string, cluster string) []string (
 	return append(clusters, cluster)
 )
+func greet() string{
+	return "clusters slice segregation"
+}
 
 func main() {
-	fmt.println("clusters slice segregation")
+	fmt.println(greet())
 	clusters := []string{} // this is a void cluster slice
 	result := addKubernetes_Clusters(clusters, "alpine")
 	result := addKubernetes_Clusters(clusters, "fedora")
