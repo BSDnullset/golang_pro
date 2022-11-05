@@ -11,8 +11,16 @@ func TestGreet(t *testing.T) {
 	want := "clusters slice segregation"
 
 	if got != want {
-		t.Errorf("got %q want %q", got, want)
+		t.Errorf("got %q wanted %q", got, want)
 	}
+
+	get := displayID_number()
+	wanted := "clusters have unique identifiers"
+
+	if get != wanted {
+		t.Errorf("got %q, wanted %q", get, wanted)
+	}
+
 }
 
 // go test files need to be named someVariable_test.go

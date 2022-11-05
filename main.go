@@ -12,7 +12,7 @@ func addClusterID(clusters []int, cluster int) []int {
 	return append(clusters, cluster)
 }
 
-func displayID_number() string { return "clusters have have unique identifiers" }
+func displayID_number() string { return "clusters have unique identifiers" }
 
 func main() {
 	fmt.Println(greet())
