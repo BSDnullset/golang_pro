@@ -23,6 +23,7 @@ func main() {
 	result = addKubernetes_Clusters(result, "debian")
 	fmt.Println(result)
 	// will print the clusters: (alpine, fedora, ubuntu, debian)
+	// will add more here
 
 	fmt.Println(displayID_number())
 	clusterID := []int{}
